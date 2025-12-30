@@ -3,6 +3,99 @@
 import * as bin from './index';
 import config from '../../../config.json';
 
+//foldersystem
+//files
+const foldersystem = {
+  home: {
+    'README.md': `'This is the README file.'`,
+    about: {
+      secretfolder: {},
+      'info.txt': `'This is some info about me'`,
+    },
+    projects: {
+      'project1.txt': `"Details about project 1."`,
+      'project2.txt': `"Details about project 2."`,
+    },
+    pictures: {
+      'picture1.png': `"This is picture 1."`,
+      'picture2.png': `"This is picture 2."`,
+    },
+    music: {
+      'song.mp3': `"This is a song file."`,
+    },
+  },
+};
+
+let currentPath = ['home'];
+
+//ls
+export const ls = async (args: string[]): Promise<string> => {
+  let currentDir: any = foldersystem;
+  currentPath.forEach((p) => {
+    currentDir = currentDir[p];
+  });
+  const items = Object.keys(currentDir);
+  return items.join('    ');
+};
+
+//cat
+export const cat = async (args: string[]): Promise<string> => {
+  if (args.length === 0) {
+    return `Usage: cat [filename]`;
+  }
+  const filename = args[0];
+  let currentDir: any = foldersystem;
+  currentPath.forEach((p) => {
+    currentDir = currentDir[p];
+  });
+
+  if (typeof currentDir[filename] === 'string') {
+    return currentDir[filename];
+  } else if (typeof currentDir[filename] === 'object') {
+    return `cat: ${filename}: Is a directory`;
+  } else {
+    return `cat: ${filename}: No such file or directory`;
+  }
+};
+
+//pwd
+export const pwd = async (args: string[]): Promise<string> => {
+  return `/${currentPath.join('/')}`;
+};
+
+//cd
+export const cd = async (args: string[]): Promise<string> => {
+  if (args.length === 0 || args[0] === '~') {
+    currentPath = ['home'];
+    return 'hey! you just back to home';
+  }
+
+  const target = args[0];
+
+  if (target === '..' || target === '../') {
+    if (currentPath.length > 1) {
+      currentPath.pop();
+      return `moved to ${currentPath.join('/')}`;
+    }
+    return `where you wanna go huh? it is root directory already.`;
+  }
+  if (target === '.') {
+    return '';
+  }
+
+  let currentDir: any = foldersystem;
+  currentPath.forEach((p) => {
+    currentDir = currentDir[p];
+  });
+
+  if (currentDir[target] && typeof currentDir[target] === 'object') {
+    currentPath.push(target);
+    return `moved to ${currentPath.join('/')}`;
+  } else {
+    return `cd: no such file or directory: ${target}`;
+  }
+};
+
 // Help
 export const help = async (args: string[]): Promise<string> => {
   const commands = Object.keys(bin).sort().join(', ');
@@ -91,26 +184,14 @@ export const reddit = async (args: string[]): Promise<string> => {
   return `Searching reddit for ${args.join(' ')}...`;
 };
 
-// Typical linux commands
+// echo
 export const echo = async (args: string[]): Promise<string> => {
   return args.join(' ');
 };
 
+// whoami
 export const whoami = async (args: string[]): Promise<string> => {
   return `${config.ps1_username}`;
-};
-
-export const ls = async (args: string[]): Promise<string> => {
-  return `a
-bunch
-of
-fake
-directories`;
-};
-
-export const cd = async (args: string[]): Promise<string> => {
-  return `unfortunately, i cannot afford more directories.
-if you want to help, you can type 'donate'.`;
 };
 
 export const date = async (args: string[]): Promise<string> => {
@@ -141,14 +222,14 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+
+░███     ░███   ░███████████   ░███     ░███     ░████████       ░████████ 
+░██████  ░███   ░███           ░██████  ░███    ░███   ░███     ░███   ░███
+░███ ░███░███   ░███           ░███ ░███░███   ░███     ░███   ░███     ░███
+░███  ░██████   ░█████████     ░███  ░██████   ░████████████   ░████████████
+░███     ░███   ░███           ░███     ░███   ░███     ░███   ░███     ░███
+░███     ░███   ░███           ░███     ░███   ░███     ░███   ░███     ░███
+░███     ░███   ░███           ░███     ░███   ░███     ░███   ░███     ░███ 
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.

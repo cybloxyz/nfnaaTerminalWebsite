@@ -1,11 +1,11 @@
 {
-  "name": "liveterm",
+  "name": "nfnaa-terminal-website",
   "version": "0.1.0",
   "license": "MIT",
   "author": {
-    "name": "Vincent Wu",
-    "url": "https://cveinnt.com",
-    "email": "contact@wensenwu.com"
+    "name": "na",
+    "url": "https://nfnaa.dev",
+    "email": "nafisanailalh7@gmail.com"
   },
   "scripts": {
     "dev": "next dev",
