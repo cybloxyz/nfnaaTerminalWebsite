@@ -7,10 +7,15 @@ import config from '../../../config.json';
 //files
 const foldersystem = {
   home: {
-    'README.md': `'This is the README file.'`,
-    about: {
-      secretfolder: {},
-      'info.txt': `'This is some info about me'`,
+    'README.md': `hello welcome to my terminal website! take a look around and have fun!`,
+    someofme: {
+      secretfolder: {
+        'topsecret.txt': `lemme tell you something..but only if you the top 3! but HEY WAIT A MINUTE NOT NOW I STILL WORK ON THE CODE!`,
+      },
+      'me.txt': `'This is some info about me'`,
+      favorite: {
+        'from-day-zero-to-zero-day.pdf': '/doc/fdztzd.pdf',
+      },
     },
     projects: {
       'project1.txt': `"Details about project 1."`,
@@ -27,6 +32,7 @@ const foldersystem = {
 };
 
 let currentPath = ['home'];
+let isUnlocked = false;
 
 //ls
 export const ls = async (args: string[]): Promise<string> => {
@@ -67,7 +73,7 @@ export const pwd = async (args: string[]): Promise<string> => {
 export const cd = async (args: string[]): Promise<string> => {
   if (args.length === 0 || args[0] === '~') {
     currentPath = ['home'];
-    return 'hey! you just back to home';
+    return 'returned to home sweetie!';
   }
 
   const target = args[0];
@@ -75,10 +81,12 @@ export const cd = async (args: string[]): Promise<string> => {
   if (target === '..' || target === '../') {
     if (currentPath.length > 1) {
       currentPath.pop();
-      return `moved to ${currentPath.join('/')}`;
+      return `moved to /${currentPath.join('/')}`;
+    } else {
+      return 'where you wanna go huh? it is in root already!';
     }
-    return `where you wanna go huh? it is root directory already.`;
   }
+
   if (target === '.') {
     return '';
   }
@@ -87,12 +95,33 @@ export const cd = async (args: string[]): Promise<string> => {
   currentPath.forEach((p) => {
     currentDir = currentDir[p];
   });
-
+  if (target === 'secretfolder' && !isUnlocked) {
+    return `Access Denied: secretfolder is locked. Use 'unlock [password]' to open it.`;
+  }
   if (currentDir[target] && typeof currentDir[target] === 'object') {
     currentPath.push(target);
-    return `moved to ${currentPath.join('/')}`;
+    return 'moved to ' + currentPath.join('/');
   } else {
     return `cd: no such file or directory: ${target}`;
+  }
+};
+
+//unlock
+export const unlock = async (args: string[]): Promise<string> => {
+  const secretcode = 'deymufoundme';
+  if (args.length === 0) {
+    return `Usage: unlock [secret_code]`;
+  }
+  const code = args[0];
+  if (code === secretcode) {
+    let currentDir: any = foldersystem;
+    currentPath.forEach((p) => {
+      currentDir = currentDir[p];
+    });
+    isUnlocked = true;
+    return `Secret folder unlocked! You can now access 'someofme/secretfolder' uhh..how you get this? ik hardcoded..`;
+  } else {
+    return `Incorrect secret code. Access denied.`;
   }
 };
 
@@ -111,8 +140,39 @@ export const help = async (args: string[]): Promise<string> => {
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
+\nType 'manpage' for more explanation.
 `;
+};
+
+//manpage
+export const manpage = async (args: string[]): Promise<string> => {
+  return ``;
+};
+
+export const runFile = async (args: string[], cmd: string): Promise<string> => {
+  if (cmd.startsWith('./')) {
+    const filename = cmd.slice(2);
+
+    let currentDir: any = foldersystem;
+    currentPath.forEach((p) => {
+      currentDir = currentDir[p];
+    });
+
+    const file = currentDir[filename];
+
+    if (file) {
+      if (
+        typeof file === 'string' &&
+        (file.startsWith('http') || file.endsWith('.pdf'))
+      ) {
+        window.open(file, '_blank');
+        return `opening ${filename}...`;
+      }
+      return `File ${filename} is not executable`;
+    }
+    return `sh: ./${filename} no such file or directory`;
+  }
+  return '';
 };
 
 // Redirection
@@ -121,29 +181,19 @@ export const repo = async (args: string[]): Promise<string> => {
   return 'Opening Github repository...';
 };
 
-// About
-export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
-More about me:
-'sumfetch' - short summary.
-'resume' - my latest resume.
-'readme' - my github readme.`;
-};
-
 export const resume = async (args: string[]): Promise<string> => {
   window.open(`${config.resume_url}`);
   return 'Opening resume...';
 };
 
 // Donate
-export const donate = async (args: string[]): Promise<string> => {
-  return `thank you for your interest. 
-here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
-`;
-};
+//export const donate = async (args: string[]): Promise<string> => {
+//return `thank you for your interest.
+//here are the ways you can support my work:
+//- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
+//- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+//`;
+//};
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
@@ -231,8 +281,8 @@ export const banner = (args?: string[]): string => {
 ░███     ░███   ░███           ░███     ░███   ░███     ░███   ░███     ░███
 ░███     ░███   ░███           ░███     ░███   ░███     ░███   ░███     ░███ 
 
+ciao! welcome to nfnaa terminal website
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
-Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
