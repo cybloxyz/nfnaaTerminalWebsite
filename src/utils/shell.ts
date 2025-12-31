@@ -14,8 +14,6 @@ export const shell = async (
     clearHistory();
   } else if (command === '') {
     setHistory('');
-  } else if (command.startsWith('./')) {
-    return await bin.runFile(args, command);
   } else if (Object.keys(bin).indexOf(args[0]) === -1) {
     setHistory(
       `shell: command not found: ${args[0]}. Try 'help' to get started.`,

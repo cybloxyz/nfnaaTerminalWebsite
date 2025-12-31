@@ -15,6 +15,9 @@ const foldersystem = {
       'me.txt': `'This is some info about me'`,
       favorite: {
         'from-day-zero-to-zero-day.pdf': '/doc/fdztzd.pdf',
+        'serious-cryptography.pdf': '/doc/seriouscryptography.pdf',
+        'art-of-exploitation.pdf': '/doc/artofexploitation.pdf',
+        'organic-chemistry.pdf': '/doc/organic-chemistry.pdf',
       },
     },
     projects: {
@@ -149,30 +152,28 @@ export const manpage = async (args: string[]): Promise<string> => {
   return ``;
 };
 
-export const runFile = async (args: string[], cmd: string): Promise<string> => {
-  if (cmd.startsWith('./')) {
-    const filename = cmd.slice(2);
+//pdf
+export const catpdf = async (args: string[], cmd: string): Promise<string> => {
+  const filename = args[0];
 
-    let currentDir: any = foldersystem;
-    currentPath.forEach((p) => {
-      currentDir = currentDir[p];
-    });
+  let currentDir: any = foldersystem;
+  currentPath.forEach((p) => {
+    currentDir = currentDir[p];
+  });
 
-    const file = currentDir[filename];
+  const file = currentDir[filename];
 
-    if (file) {
-      if (
-        typeof file === 'string' &&
-        (file.startsWith('http') || file.endsWith('.pdf'))
-      ) {
-        window.open(file, '_blank');
-        return `opening ${filename}...`;
-      }
-      return `File ${filename} is not executable`;
+  if (file) {
+    if (
+      typeof file === 'string' &&
+      (file.startsWith('http') || file.endsWith('.pdf'))
+    ) {
+      window.open(file, '_blank');
+      return `opening ${filename}...`;
     }
-    return `sh: ./${filename} no such file or directory`;
+    return `File ${filename} is not executable`;
   }
-  return '';
+  return `sh: ./${filename} no such file or directory`;
 };
 
 // Redirection
