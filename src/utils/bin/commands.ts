@@ -20,7 +20,7 @@ const foldersystem = {
         'organic-chemistry.pdf': '/doc/organic-chemistry.pdf',
       },
     },
-    projects: {
+    myWorks: {
       'project1.txt': `"Details about project 1."`,
       'project2.txt': `"Details about project 2."`,
     },
@@ -111,6 +111,7 @@ export const cd = async (args: string[]): Promise<string> => {
 
 //unlock
 export const unlock = async (args: string[]): Promise<string> => {
+  const desc = 'to unlock the secretfolder!. Usage: unlock [password]';
   const secretcode = 'deymufoundme';
   if (args.length === 0) {
     return `Usage: unlock [secret_code]`;
@@ -124,13 +125,13 @@ export const unlock = async (args: string[]): Promise<string> => {
     isUnlocked = true;
     return `Secret folder unlocked! You can now access 'someofme/secretfolder' uhh..how you get this? ik hardcoded..`;
   } else {
-    return `Incorrect secret code. Access denied.`;
+    return `Incorrect secret code. Access denied lol.`;
   }
 };
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin).sort().join(', ');
+  const commands = Object.keys(bin).sort().join(` `);
   var c = '';
   for (let i = 1; i <= Object.keys(bin).sort().length; i++) {
     if (i % 7 === 0) {
@@ -143,13 +144,135 @@ export const help = async (args: string[]): Promise<string> => {
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-\nType 'manpage' for more explanation.
+\nType 'man [command]' for more explanation.
 `;
 };
 
-//manpage
-export const manpage = async (args: string[]): Promise<string> => {
-  return ``;
+const manual = {
+  banner: `
+to show welcome page. 
+
+Usage: banner`,
+  bing: `
+just search something with bing. 
+  
+Usage: bing [searching]`,
+  cat: `
+wanna read the text? use cat. 
+  
+Usage: cat [filename]`,
+  catpdf: `
+you can't read pdf with cat, use catpdf. 
+    
+Usage: cat [filename.pdf]`,
+  cd: `
+exploring? you need cd then, use it to enter or exit the directory. 
+  
+Usage: cd [directory], cd .. or cd ../`,
+  date: `
+make sure you already in present, touch the grass now what time is it. 
+  
+Usage: date`,
+  duckduckgo: `
+not sure with bing? try duckduckgo. 
+  
+Usage: duckduckgo [searching]`,
+  echo: `
+it just give back what you write, just try it. 
+  
+Usage [your text]`,
+  email: `
+it is my email, what do you want to mail?. 
+  
+Usage: email`,
+  github: `
+my github! just check it btw.
+  
+Usage: github`,
+  google: `
+what? just google it. 
+  
+Usage: google [searching]`,
+  help: `
+need help? just ask!. 
+  
+Usage: help`,
+  linkedin: `
+yo this is my linkedin, let's make connection!. 
+  
+Usage: linkedin`,
+  ls: `
+need to know what is in here? use this. 
+  
+Usage: ls`,
+  man: `
+here you are using me. 
+  
+Usage: man [command]`,
+  projects: `
+yoo my github projects. 
+  
+Usage: projects`,
+  pwd: `
+lost somewhere? didn't now where you are? use this. 
+  
+Usage: pwd`,
+  quote: `
+having bad day?...sucks, i'll give you quote then. 
+  
+Usage: quote`,
+  reddit: `
+no google, no duckduckgo, no bing? then use reddit. 
+  
+Usage: reddit [searching]`,
+  repo: `
+his website repo, thanks to cveinnt for such cool beginning. 
+  
+Usage: repo`,
+  resume: `
+you want to hire me?! then check my resume gorgeous. 
+  
+Usage: resume`,
+  sudo: `
+super user, even you'll never be super hahaha just try it. 
+  
+Usage: sudo`,
+  sumfetch: `
+sum of my identity and social media maybe. 
+  
+Usage: sumfetch`,
+  unlock: `
+use it to unlock secret folder...somewhere in directory. 
+  
+Usage: unlock [password]`,
+  vim: `
+just type and see. 
+  
+Usage: vim`,
+  weather: `
+do you even go outside? go check the weather!. 
+  
+Usage: weather`,
+  whoami: `
+doubt about yourself? ask then. 
+  
+Usage: whoami`,
+};
+
+//man
+export const man = async (args: string[]): Promise<string> => {
+  if (args.length === 0) {
+    return 'Usage: man [command]';
+  }
+
+  const command = args[0];
+  let c: any = manual;
+
+  if (typeof c[command] === 'string') {
+    return c[command];
+  } else {
+    return `man: there is no man for ${command}`;
+  }
 };
 
 //pdf
@@ -171,9 +294,9 @@ export const catpdf = async (args: string[], cmd: string): Promise<string> => {
       window.open(file, '_blank');
       return `opening ${filename}...`;
     }
-    return `File ${filename} is not executable`;
+    return `File ${filename} is not readable`;
   }
-  return `sh: ./${filename} no such file or directory`;
+  return `catpdf: ${filename} no such pdf file`;
 };
 
 // Redirection
@@ -211,7 +334,7 @@ export const github = async (args: string[]): Promise<string> => {
 export const linkedin = async (args: string[]): Promise<string> => {
   window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
 
-  return 'Opening linkedin...';
+  return 'i am not ready..wait until i personalized my linkedin haha';
 };
 
 // Search
@@ -249,25 +372,13 @@ export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
 };
 
-export const vi = async (args: string[]): Promise<string> => {
-  return `woah, you still use 'vi'? just try 'vim'.`;
-};
-
 export const vim = async (args: string[]): Promise<string> => {
-  return `'vim' is so outdated. how about 'nvim'?`;
-};
-
-export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too fancy. why not 'emacs'?`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
+  return `forget it, i use vscode`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
   window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
-  return `Permission denied: with little power comes... no responsibility? `;
+  return `Permission denied: what power do you expect to have huh?`;
 };
 
 // Banner

@@ -1,0 +1,437 @@
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  24168 14516 ?        Ss    2025   2:47 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S     2025   0:01 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S     2025   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/0:0H-events_highpri]
+root          13  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        I     2025   0:00 [rcu_tasks_kthread]
+root          15  0.0  0.0      0     0 ?        I     2025   0:00 [rcu_tasks_rude_kthread]
+root          16  0.0  0.0      0     0 ?        I     2025   0:00 [rcu_tasks_trace_kthread]
+root          17  0.0  0.0      0     0 ?        S     2025   0:25 [ksoftirqd/0]
+root          18  0.0  0.0      0     0 ?        I     2025  16:54 [rcu_preempt]
+root          19  0.0  0.0      0     0 ?        S     2025   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          20  0.0  0.0      0     0 ?        S     2025   0:01 [rcu_exp_gp_kthread_worker]
+root          21  0.0  0.0      0     0 ?        S     2025   1:43 [migration/0]
+root          22  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/0]
+root          23  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/0]
+root          24  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/2]
+root          25  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/2]
+root          26  0.0  0.0      0     0 ?        S     2025   1:11 [migration/2]
+root          27  0.0  0.0      0     0 ?        S     2025   0:07 [ksoftirqd/2]
+root          29  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/2:0H-events_highpri]
+root          30  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/4]
+root          31  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/4]
+root          32  0.0  0.0      0     0 ?        S     2025   6:52 [migration/4]
+root          33  0.0  0.0      0     0 ?        S     2025   0:03 [ksoftirqd/4]
+root          35  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/4:0H-events_highpri]
+root          36  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/5]
+root          37  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/5]
+root          38  0.0  0.0      0     0 ?        S     2025   4:21 [migration/5]
+root          39  0.0  0.0      0     0 ?        S     2025   0:02 [ksoftirqd/5]
+root          41  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/5:0H-events_highpri]
+root          42  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/6]
+root          43  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/6]
+root          44  0.0  0.0      0     0 ?        S     2025   2:56 [migration/6]
+root          45  0.0  0.0      0     0 ?        S     2025   0:02 [ksoftirqd/6]
+root          47  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/6:0H-events_highpri]
+root          48  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/7]
+root          49  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/7]
+root          50  0.0  0.0      0     0 ?        S     2025   2:04 [migration/7]
+root          51  0.0  0.0      0     0 ?        S     2025   0:02 [ksoftirqd/7]
+root          53  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/7:0H-events_highpri]
+root          54  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/8]
+root          55  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/8]
+root          56  0.0  0.0      0     0 ?        S     2025   1:22 [migration/8]
+root          57  0.0  0.0      0     0 ?        S     2025   0:02 [ksoftirqd/8]
+root          59  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/8:0H-events_highpri]
+root          60  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/9]
+root          61  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/9]
+root          62  0.0  0.0      0     0 ?        S     2025   1:08 [migration/9]
+root          63  0.0  0.0      0     0 ?        S     2025   0:02 [ksoftirqd/9]
+root          65  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/9:0H-events_highpri]
+root          66  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/10]
+root          67  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/10]
+root          68  0.0  0.0      0     0 ?        S     2025   0:58 [migration/10]
+root          69  0.0  0.0      0     0 ?        S     2025   0:02 [ksoftirqd/10]
+root          71  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/10:0H-events_highpri]
+root          72  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/11]
+root          73  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/11]
+root          74  0.0  0.0      0     0 ?        S     2025   0:42 [migration/11]
+root          75  0.0  0.0      0     0 ?        S     2025   0:01 [ksoftirqd/11]
+root          77  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/11:0H-events_highpri]
+root          78  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/1]
+root          79  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/1]
+root          80  0.0  0.0      0     0 ?        S     2025   0:13 [migration/1]
+root          81  0.0  0.0      0     0 ?        S     2025   0:30 [ksoftirqd/1]
+root          83  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/1:0H-events_highpri]
+root          84  0.0  0.0      0     0 ?        S     2025   0:00 [cpuhp/3]
+root          85  0.0  0.0      0     0 ?        S     2025   0:00 [idle_inject/3]
+root          86  0.0  0.0      0     0 ?        S     2025   0:08 [migration/3]
+root          87  0.0  0.0      0     0 ?        S     2025   0:05 [ksoftirqd/3]
+root          89  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/3:0H-events_highpri]
+root          90  0.0  0.0      0     0 ?        S     2025   0:00 [kdevtmpfs]
+root          91  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-inet_frag_wq]
+root          92  0.0  0.0      0     0 ?        S     2025   0:01 [kauditd]
+root          93  0.0  0.0      0     0 ?        S     2025   0:01 [khungtaskd]
+root          94  0.0  0.0      0     0 ?        S     2025   0:00 [oom_reaper]
+root          97  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-writeback]
+root          98  0.0  0.0      0     0 ?        S     2025   0:23 [kcompactd0]
+root          99  0.0  0.0      0     0 ?        SN    2025   0:00 [ksmd]
+root         100  0.0  0.0      0     0 ?        SN    2025   0:01 [khugepaged]
+root         101  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-kintegrityd]
+root         102  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-kblockd]
+root         103  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-blkcg_punt_bio]
+root         105  0.0  0.0      0     0 ?        S     2025  14:39 [irq/9-acpi]
+root         107  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-tpm_dev_wq]
+root         109  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-ata_sff]
+root         110  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-md]
+root         111  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-md_bitmap]
+root         112  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-edac-poller]
+root         113  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-devfreq_wq]
+root         114  0.0  0.0      0     0 ?        S     2025   0:00 [watchdogd]
+root         117  0.0  0.0      0     0 ?        S     2025   0:28 [kswapd0]
+root         118  0.0  0.0      0     0 ?        S     2025   0:00 [ecryptfs-kthread]
+root         119  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-kthrotld]
+root         121  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-acpi_thermal_pm]
+root         124  0.0  0.0      0     0 ?        S     2025   0:22 [hwrng]
+root         125  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-hfi-updates]
+root         126  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-mld]
+root         128  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-ipv6_addrconf]
+root         136  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-kstrp]
+root         159  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-charger_manager]
+root         161  0.0  0.0      0     0 ?        I<    2025   0:15 [kworker/0:1H-events_highpri]
+root         185  0.0  0.0      0     0 ?        I<    2025   0:29 [kworker/8:1H-kblockd]
+root         188  0.0  0.0      0     0 ?        I<    2025   0:12 [kworker/6:1H-kblockd]
+root         213  0.0  0.0      0     0 ?        I<    2025   0:13 [kworker/7:1H-kblockd]
+root         214  0.0  0.0      0     0 ?        I<    2025   1:21 [kworker/10:1H-i915_cleanup]
+root         215  0.0  0.0      0     0 ?        I<    2025   0:18 [kworker/5:1H-kblockd]
+root         216  0.0  0.0      0     0 ?        I<    2025   0:56 [kworker/11:1H-kblockd]
+root         221  0.0  0.0      0     0 ?        I<    2025   1:36 [kworker/9:1H-i915_cleanup]
+root         258  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-nvme-wq]
+root         260  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-nvme-reset-wq]
+root         263  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-nvme-delete-wq]
+root         265  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-nvme-auth-wq]
+root         285  0.1  0.0      0     0 ?        S     2025  48:32 [irq/140-SYNA3602:00]
+root         288  0.0  0.0      0     0 ?        S     2025   0:00 [spi0]
+root         327  0.0  0.0      0     0 ?        S     2025   1:35 [jbd2/nvme0n1p5-8]
+root         328  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-ext4-rsv-conversion]
+root         382  0.0  0.7 257032 176980 ?       S<s   2025   3:27 /usr/lib/systemd/systemd-journald
+root         418  0.0  0.0  30992  8060 ?        Ss    2025   0:11 /usr/lib/systemd/systemd-udevd
+root         457  0.0  0.0      0     0 ?        S     2025   0:00 [psimon]
+root         621  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-cfg80211]
+root         651  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-cryptd]
+root         658  0.0  0.0      0     0 ?        S     2025  11:54 [irq/150-iwlwifi:default_queue]
+root         659  0.0  0.0      0     0 ?        S     2025   0:45 [irq/151-iwlwifi:queue_1]
+root         660  0.0  0.0      0     0 ?        S     2025   0:50 [irq/152-iwlwifi:queue_2]
+root         661  0.0  0.0      0     0 ?        S     2025   2:11 [irq/153-iwlwifi:queue_3]
+root         662  0.0  0.0      0     0 ?        S     2025   2:01 [irq/154-iwlwifi:queue_4]
+root         663  0.0  0.0      0     0 ?        S     2025   1:08 [irq/155-iwlwifi:queue_5]
+root         664  0.0  0.0      0     0 ?        S     2025   1:05 [irq/156-iwlwifi:queue_6]
+root         665  0.0  0.0      0     0 ?        S     2025   0:34 [irq/157-iwlwifi:queue_7]
+root         666  0.0  0.0      0     0 ?        S     2025   1:13 [irq/158-iwlwifi:queue_8]
+root         667  0.0  0.0      0     0 ?        S     2025   1:46 [irq/159-iwlwifi:queue_9]
+root         668  0.0  0.0      0     0 ?        S     2025   1:32 [irq/160-iwlwifi:queue_10]
+root         669  0.0  0.0      0     0 ?        S     2025   0:52 [irq/161-iwlwifi:queue_11]
+root         670  0.0  0.0      0     0 ?        S     2025   1:01 [irq/162-iwlwifi:queue_12]
+root         671  0.0  0.0      0     0 ?        S     2025   0:00 [irq/163-iwlwifi:exception]
+root         675  0.0  0.0      0     0 ?        S     2025   0:00 [irq/16-processor_thermal_device_pci]
+root         697  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-ttm]
+root         705  0.0  0.0      0     0 ?        S     2025   0:00 [card1-crtc0]
+root         706  0.0  0.0      0     0 ?        S     2025   0:00 [card1-crtc1]
+root         707  0.0  0.0      0     0 ?        S     2025   0:00 [card1-crtc2]
+root         708  0.0  0.0      0     0 ?        S     2025   0:00 [card1-crtc3]
+systemd+     825  0.0  0.0  17560  7328 ?        Ss    2025   3:59 /usr/lib/systemd/systemd-oomd
+systemd+     841  0.0  0.0  23400 13104 ?        Ss    2025   3:14 /usr/lib/systemd/systemd-resolved
+systemd+     847  0.0  0.0  91048  7172 ?        Ssl   2025   0:03 /usr/lib/systemd/systemd-timesyncd
+avahi       1075  0.0  0.0   8988  4528 ?        Ss    2025   1:10 avahi-daemon: running [HYPI5.local]
+root        1076  0.0  0.0  13556  5364 ?        Ss    2025   0:00 /usr/libexec/bluetooth/bluetoothd
+message+    1078  0.0  0.0  12456  7412 ?        Ss    2025   9:35 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+gnome-r+    1084  0.0  0.0 439208 13048 ?        Ssl   2025   0:00 /usr/libexec/gnome-remote-desktop-daemon --system
+polkitd     1093  0.0  0.0 391196 16688 ?        Ssl   2025   0:35 /usr/lib/polkit-1/polkitd --no-debug
+root        1097  0.0  0.0 310912  7656 ?        Ssl   2025   0:00 /usr/libexec/power-profiles-daemon
+root        1114  0.0  0.1 2663960 30184 ?       Ssl   2025   2:59 /usr/lib/snapd/snapd
+root        1122  0.0  0.0 311480  7940 ?        Ssl   2025   0:46 /usr/libexec/accounts-daemon
+root        1127  0.0  0.0   6820  2740 ?        Ss    2025   0:01 /usr/sbin/cron -f -P
+root        1133  0.0  0.0 307220  6712 ?        Ssl   2025   0:00 /usr/libexec/switcheroo-control
+root        1144  0.0  0.0  18168  8504 ?        Ss    2025   0:09 /usr/lib/systemd/systemd-logind
+root        1147  0.0  0.0 422300 10328 ?        Ssl   2025   0:36 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+root        1152  0.0  0.0 470460 11692 ?        Ssl   2025   0:15 /usr/libexec/udisks2/udisksd
+root        1157  0.7  2.7 4403744 667144 ?      Ssl   2025 277:22 /bin/warp-svc
+avahi       1223  0.0  0.0   8480  1280 ?        S     2025   0:00 avahi-daemon: chroot helper
+root        1233  0.0  0.0 820964 21368 ?        Ssl   2025   3:25 /usr/sbin/NetworkManager --no-daemon
+root        1237  0.0  0.0  18340 10168 ?        Ss    2025   0:22 /usr/sbin/wpa_supplicant -u -s -O DIR=/run/wpa_supplicant GROUP=netdev
+syslog      1301  0.0  0.0 222588  6784 ?        Ssl   2025   1:16 /usr/sbin/rsyslogd -n -iNONE
+root        1383  0.0  0.0 392296  8432 ?        Ssl   2025   0:07 /usr/sbin/ModemManager
+root        1506  0.0  0.0 322076 15884 ?        Ssl   2025  13:07 /usr/libexec/upowerd
+root        1603  0.0  0.0 1235948 5932 ?        Ssl   2025   0:10 /snap/canonical-livepatch/372/canonical-livepatchd
+root        1608  0.0  0.0 109664 12772 ?        Ssl   2025   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+colord      1626  0.0  0.0 317472 11252 ?        Ssl   2025   0:00 /usr/libexec/colord
+root        1634  0.0  0.0  82836 16980 ?        Ss    2025   0:11 /usr/sbin/winbindd --foreground --no-process-group
+root        1643  0.0  0.0 312212  8632 ?        Ssl   2025   0:01 /usr/sbin/gdm3
+postgres    1665  0.0  0.1 222840 24412 ?        Ss    2025   0:11 /usr/lib/postgresql/16/bin/postgres -D /var/lib/postgresql/16/main -c config_file=/etc/postgresql/16/main/postgresql.conf
+root        1673  0.0  0.0  83504 10808 ?        S     2025   0:01 winbindd: domain child [HYPI5]
+postgres    1675  0.0  0.0 222972  6172 ?        Ss    2025   0:00 postgres: 16/main: checkpointer 
+postgres    1676  0.0  0.0 222996  5020 ?        Ss    2025   0:05 postgres: 16/main: background writer 
+postgres    1678  0.0  0.0 222840  7936 ?        Ss    2025   0:05 postgres: 16/main: walwriter 
+postgres    1679  0.0  0.0 224448  6404 ?        Ss    2025   0:02 postgres: 16/main: autovacuum launcher 
+postgres    1680  0.0  0.0 224424  5684 ?        Ss    2025   0:00 postgres: 16/main: logical replication launcher 
+root        1843  0.0  0.0      0     0 ?        S<    2025   0:00 [krfcommd]
+kernoops    2289  0.0  0.0  12744  1976 ?        Ss    2025   0:00 /usr/sbin/kerneloops --test
+kernoops    2300  0.0  0.0  12744  1948 ?        Ss    2025   0:00 /usr/sbin/kerneloops
+dictd       2304  0.0  0.0   4468  1488 ?        Ss    2025   0:00 dictd 1.13.1: 0/0
+root        2512  0.0  0.0 466540 16508 ?        Sl    2025   0:03 gdm-session-worker [pam/gdm-password]
+nfnaa       2525  0.0  0.0  21912 12628 ?        Ss    2025   2:23 /usr/lib/systemd/systemd --user
+nfnaa       2530  0.0  0.0  21464  2328 ?        S     2025   0:00 (sd-pam)
+nfnaa       2542  0.0  0.0 117148 13356 ?        Ssl   2025  30:37 /usr/bin/pipewire
+nfnaa       2543  0.0  0.0  95132  5044 ?        Ssl   2025   0:00 /usr/bin/pipewire -c filter-chain.conf
+nfnaa       2548  0.0  0.0 564464 21980 ?        Ssl   2025   0:42 /usr/bin/wireplumber
+nfnaa       2549  0.0  0.1 167224 41260 ?        SLsl  2025  33:59 /usr/bin/pipewire-pulse
+nfnaa       2552  0.0  0.0 314764 10240 ?        SLsl  2025   0:04 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+nfnaa       2564  0.0  0.0  12624  8064 ?        Ss    2025   2:34 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+nfnaa       2601  0.0  0.0 1204772 7888 ?        Ssl   2025   0:03 /usr/libexec/xdg-document-portal
+nfnaa       2605  0.0  0.0 306836  5992 ?        Ssl   2025   0:00 /usr/libexec/xdg-permission-store
+root        2612  0.0  0.0   2704  1908 ?        Ss    2025   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+nfnaa       2633  0.0  0.0 233064  5824 tty2     Ssl+  2025   0:00 /usr/libexec/gdm-wayland-session env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --session=ubuntu
+nfnaa       2643  0.0  0.0 295632 14560 tty2     Sl+   2025   0:00 /usr/libexec/gnome-session-binary --session=ubuntu
+nfnaa       2738  0.0  0.0 162652  6032 ?        Ssl   2025   0:00 /usr/libexec/gcr-ssh-agent --base-dir /run/user/1000/gcr
+nfnaa       2740  0.0  0.0  88944  5428 ?        Ssl   2025   0:00 /usr/libexec/gnome-session-ctl --monitor
+nfnaa       2757  0.0  0.0 311780  7700 ?        Ssl   2025   0:01 /usr/libexec/gvfsd
+nfnaa       2765  0.0  0.0 531868  6952 ?        Sl    2025   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+nfnaa       2768  0.0  0.0 518056 17212 ?        Ssl   2025   0:11 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+nfnaa       2800  0.0  0.0 382976  7776 ?        Sl    2025   0:00 /usr/libexec/at-spi-bus-launcher --launch-immediately
+nfnaa       2811  0.0  0.0   9744  5136 ?        S     2025   0:14 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+nfnaa       2813  2.3  2.7 5689588 660072 ?      Ssl   2025 833:43 /usr/bin/gnome-shell
+nfnaa       2889  0.0  0.0 236068  7200 ?        Sl    2025   0:02 /usr/libexec/at-spi2-registryd --use-gnome-session
+nfnaa       2908  0.0  0.0 654932 14908 ?        Sl    2025   0:02 /usr/libexec/gnome-shell-calendar-server
+nfnaa       2916  0.0  0.1 1272472 33652 ?       Ssl   2025   0:01 /usr/libexec/evolution-source-registry
+nfnaa       2926  0.0  0.1 2924156 39368 ?       Sl    2025   0:04 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.Shell.Notifications
+nfnaa       2942  0.0  0.0 380952  6452 ?        Ssl   2025   0:01 /usr/libexec/gsd-a11y-settings
+nfnaa       2943  0.0  0.0 413764 21880 ?        Ssl   2025   0:05 /usr/libexec/gsd-color
+nfnaa       2945  0.0  0.0 429100 10928 ?        Ssl   2025   0:01 /usr/libexec/gsd-datetime
+nfnaa       2948  0.0  0.0 383568 10896 ?        Ssl   2025   0:49 /usr/libexec/gsd-housekeeping
+nfnaa       2954  0.0  0.0 412684 21232 ?        Ssl   2025   0:02 /usr/libexec/gsd-keyboard
+nfnaa       2957  0.0  0.1 734400 27228 ?        Ssl   2025   0:23 /usr/libexec/gsd-media-keys
+nfnaa       2967  0.0  0.1 593952 27740 ?        Ssl   2025   0:17 /usr/libexec/gsd-power
+nfnaa       2969  0.0  0.0 321172 10420 ?        Ssl   2025   0:01 /usr/libexec/gsd-print-notifications
+nfnaa       2971  0.0  0.0 454748  6512 ?        Ssl   2025   0:05 /usr/libexec/gsd-rfkill
+nfnaa       2972  0.0  0.0 307084  6676 ?        Ssl   2025   0:04 /usr/libexec/gsd-screensaver-proxy
+nfnaa       2973  0.0  0.0 541016 12364 ?        Ssl   2025   1:08 /usr/libexec/gsd-sharing
+nfnaa       2980  0.0  0.0 383252  7236 ?        Ssl   2025   0:02 /usr/libexec/gsd-smartcard
+nfnaa       2986  0.0  0.0 391068  8880 ?        Ssl   2025   0:02 /usr/libexec/gsd-sound
+nfnaa       2989  0.0  0.0 413608 22100 ?        Ssl   2025   0:02 /usr/libexec/gsd-wacom
+nfnaa       3027  0.0  0.0 460724 10996 ?        Ssl   2025   0:29 /usr/libexec/gvfs-udisks2-volume-monitor
+nfnaa       3042  0.0  0.0 544224 20092 ?        Sl    2025   0:03 /usr/libexec/goa-daemon
+nfnaa       3048  0.0  0.2 824504 50436 ?        Sl    2025   0:01 /usr/libexec/evolution-data-server/evolution-alarm-notify
+nfnaa       3062  0.0  0.0 305624  7528 ?        Sl    2025   0:00 /usr/libexec/gsd-disk-utility-notify
+nfnaa       3065  0.0  0.1 1586408 31564 ?       Ssl   2025  11:32 /bin/warp-taskbar
+nfnaa       3144  0.0  0.0 386520  8024 ?        Sl    2025   0:01 /usr/libexec/goa-identity-service
+nfnaa       3174  0.0  0.0 413632 13692 ?        Sl    2025   0:00 /usr/libexec/gsd-printer
+nfnaa       3192  0.0  0.0 961928 19608 ?        Ssl   2025   0:06 /usr/libexec/evolution-calendar-factory
+nfnaa       3206  0.0  0.0 307188  6424 ?        Ssl   2025   0:01 /usr/libexec/gvfs-mtp-volume-monitor
+nfnaa       3217  0.0  0.0 307288  6376 ?        Ssl   2025   0:01 /usr/libexec/gvfs-goa-volume-monitor
+nfnaa       3224  0.0  0.0 308156  6668 ?        Ssl   2025   0:01 /usr/libexec/gvfs-gphoto2-volume-monitor
+nfnaa       3229  0.0  0.0 749272 23908 ?        Ssl   2025   0:04 /usr/libexec/evolution-addressbook-factory
+nfnaa       3236  0.0  0.0 386772  7284 ?        Ssl   2025   0:29 /usr/libexec/gvfs-afc-volume-monitor
+nfnaa       3298  0.0  0.0 556312 14632 ?        Sl    2025   0:02 /usr/libexec/gvfsd-http --spawner :1.20 /org/gtk/gvfs/exec_spaw/0
+nfnaa       3314  0.0  0.0 395540 11868 ?        Ssl   2025   0:03 /usr/libexec/glib-pacrunner
+nfnaa       3315  0.0  0.0 231556  7508 ?        Ssl   2025   0:04 /usr/libexec/dconf-service
+nfnaa       3327  0.0  0.0 1172736 18400 ?       Sl    2025   0:58 /usr/libexec/gvfsd-trash --spawner :1.20 /org/gtk/gvfs/exec_spaw/1
+nfnaa       3355  0.0  0.1 947804 31808 ?        SNsl  2025   0:40 /usr/libexec/tracker-miner-fs-3
+nfnaa       3357  0.0  0.1 2922228 24684 ?       Sl    2025   0:02 /usr/bin/gjs -m /usr/share/gnome-shell/org.gnome.ScreenSaver
+nfnaa       3381  0.0  0.0 961420 14968 ?        Ssl   2025   0:13 /usr/libexec/xdg-desktop-portal
+nfnaa       3395  0.0  3.0 2575616 742212 ?      Ssl   2025   4:43 /usr/libexec/xdg-desktop-portal-gnome
+nfnaa       3406  0.0  0.0  39136  7952 ?        Ss    2025   0:00 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+nfnaa       3463  0.0  0.1 492416 25600 ?        Ssl   2025   0:14 /usr/libexec/xdg-desktop-portal-gtk
+nfnaa       3474  0.0  0.2 2003928 66376 ?       Sl    2025   2:26 /snap/snapd-desktop-integration/315/usr/bin/snapd-desktop-integration
+nfnaa       3553  0.0  0.0 234240  7032 ?        Ssl   2025   0:05 /usr/libexec/gvfsd-metadata
+nfnaa       3735  0.0  0.1 568860 32216 ?        Sl    2025   0:15 /usr/bin/update-notifier
+nfnaa       4396  0.0  0.0 2060976 9912 ?        Sl    2025   0:17 /usr/bin/snap userd
+root        5860  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-tls-strp]
+nfnaa       6180  0.4  0.4 615296 112908 ?       Sl    2025 159:14 /usr/bin/Xwayland :0 -rootless -noreset -accessx -core -auth /run/user/1000/.mutter-Xwaylandauth.Y3CGH3 -listenfd 4 -listenfd 5 -displayfd 6 -initfd 7 -byteswappedclients
+nfnaa       6190  0.0  0.2 863588 70424 ?        Ssl   2025   0:15 /usr/libexec/gsd-xsettings
+nfnaa       6220  0.0  0.4 1206268 109784 ?      Sl    2025   7:31 /usr/libexec/mutter-x11-frames
+nfnaa       6903  0.0  0.0 733404 12188 ?        Sl    2025   0:17 /usr/libexec/gvfsd-recent --spawner :1.20 /org/gtk/gvfs/exec_spaw/2
+root        8396  0.0  0.1 601588 32340 ?        Ssl   2025   0:59 /usr/libexec/fwupd/fwupd
+nfnaa      25110  0.0  0.0 459888  8524 ?        Sl    2025   0:01 /usr/libexec/gvfsd-network --spawner :1.20 /org/gtk/gvfs/exec_spaw/3
+nfnaa      25119  0.0  0.0 387944  8120 ?        Sl    2025   0:02 /usr/libexec/gvfsd-dnssd --spawner :1.20 /org/gtk/gvfs/exec_spaw/4
+nfnaa      51407  0.0  0.0 307268  6860 ?        Ssl   2025   0:02 /usr/libexec/flatpak-session-helper
+nfnaa      51412  0.0  0.0   4436   796 ?        Ss    2025   0:00 server --sh -n /run/user/1000/.flatpak-helper/pkcs11-flatpak-51407 --provider p11-kit-trust.so pkcs11:model=p11-kit-trust?write-protected=yes
+nfnaa      97270  0.0  0.0 117676  8668 ?        Ssl   2025   0:01 /usr/bin/speech-dispatcher -s -t 0
+nfnaa      97282  0.0  0.0      0     0 ?        Z     2025   0:00 [sd_espeak-ng-mb] <defunct>
+nfnaa      97285  0.0  0.0 104772  7908 ?        Sl    2025   0:00 /usr/lib/speech-dispatcher-modules/sd_espeak-ng /etc/speech-dispatcher/modules/espeak-ng.conf
+nfnaa      97288  0.0  0.0 162692  5376 ?        Sl    2025   1:06 /usr/lib/speech-dispatcher-modules/sd_dummy /etc/speech-dispatcher/modules/dummy.conf
+nfnaa      97291  0.0  0.0   5668  2484 ?        S     2025   0:00 /usr/lib/speech-dispatcher-modules/sd_openjtalk /etc/speech-dispatcher/modules/openjtalk.conf
+root      240128  0.0  0.0      0     0 ?        I<    2025   0:04 [kworker/3:2H-kblockd]
+root      240365  0.0  0.0      0     0 ?        I<    2025   0:13 [kworker/4:1H-kblockd]
+root      240380  0.0  0.0      0     0 ?        I<    2025   0:09 [kworker/2:2H-kblockd]
+root      265420  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-xfsalloc]
+root      265421  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-xfs_mru_cache]
+root      265427  0.0  0.0      0     0 ?        S     2025   0:00 [jfsIO]
+root      265428  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265429  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265430  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265431  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265432  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265433  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265434  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265435  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265436  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265437  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265438  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265439  0.0  0.0      0     0 ?        S     2025   0:00 [jfsCommit]
+root      265440  0.0  0.0      0     0 ?        S     2025   0:00 [jfsSync]
+nfnaa     287291  0.0  0.4 1668360 108052 ?      Sl    2025   0:04 /usr/bin/gnome-clocks --gapplication-service
+fwupd-r+  328933  0.0  0.1 589692 36728 ?        Ssl   2025   0:33 /usr/bin/fwupdmgr refresh
+nfnaa     427124  0.0  0.0   8248  3796 ?        S     2025   0:00 bash /home/nfnaa/.steam/debian-installation/steam.sh -nominidumps -nobreakpad
+nfnaa     427214  0.0  0.0  25232  4856 ?        S     2025   0:01 /home/nfnaa/.steam/debian-installation/ubuntu12_32/steam-runtime/usr/libexec/steam-runtime-tools-0/srt-logger --sh-syntax --rotate=8388608 --log-directory /home/nfnaa/.steam/steam/logs --filename console-linux.txt --log-fd=7 --journal-fd=5 --parse-level-prefix
+nfnaa     427245  0.7  0.3 953824 86852 ?        Sl    2025 145:50 /home/nfnaa/.steam/debian-installation/ubuntu12_32/steam -srt-logger-opened -nominidumps -nobreakpad
+nfnaa     427277  0.0  0.0   4808  1612 ?        Ss    2025   0:00 /home/nfnaa/.steam/debian-installation/steamrt64/steam-runtime-steamrt/pressure-vessel/libexec/steam-runtime-tools-0/srt-bwrap --args 26 /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --generate-locales --fd 14 --regenerate-ld.so-cache /var/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --exit-with-parent --subreaper --assign-fd=1=3 --assign-fd=2=4 --shell=none --terminal=none -- /home/nfnaa/.steam/debian-installation/steamrt64/steam-runtime-steamrt/pressure-vessel/bin/steam-runtime-launcher-interface-0 container-runtime /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper_sniper_wrap.sh -nocrashdialog -lang=en_US -cachedir=/home/nfnaa/.steam/debian-installation/config/htmlcache -steampid=427245 -buildid=1751405894 -steamid=0 -logdir=/home/nfnaa/.steam/debian-installation/logs -uimode=7 -startcount=0 -steamuniverse=Public -realm=Global -clientui=/home/nfnaa/.steam/debian-installation/clientui -steampath=/home/nfnaa/.steam/debian-installation/ubuntu12_32/steam -launcher=0 --valve-initial-threadpool-size=6 --valve-enable-site-isolation --enable-smooth-scrolling --password-store=basic --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --disable-quick-menu --disable-component-update --enable-features=PlatformHEVCDecoderSupport --disable-features=SpareRendererForSitePerProcess,DcheckIsFatal,BlockPromptsIfIgnoredOften,ValveFFmpegAllowLowDelayHEVC
+nfnaa     427290  0.0  0.0  21748  3924 ?        S     2025   0:00 /home/nfnaa/.steam/debian-installation/ubuntu12_32/steam-runtime/usr/libexec/steam-runtime-tools-0/srt-logger --sh-syntax --rotate=8388608 --log-directory /home/nfnaa/.steam/steam/logs --filename webhelper-linux.txt --log-fd=7 --journal-fd=5 --parse-level-prefix --journal-level=info
+nfnaa     427363  0.0  0.0 316840  4460 ?        Sl    2025   0:01 steam-runtime-launcher-service --alongside-steam
+nfnaa     427430  0.0  0.0  26596  2144 ?        Ss    2025   0:00 /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --generate-locales --fd 14 --regenerate-ld.so-cache /var/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides-path /usr/lib/pressure-vessel/overrides --exit-with-parent --subreaper --assign-fd=1=3 --assign-fd=2=4 --shell=none --terminal=none -- /home/nfnaa/.steam/debian-installation/steamrt64/steam-runtime-steamrt/pressure-vessel/bin/steam-runtime-launcher-interface-0 container-runtime /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper_sniper_wrap.sh -nocrashdialog -lang=en_US -cachedir=/home/nfnaa/.steam/debian-installation/config/htmlcache -steampid=427245 -buildid=1751405894 -steamid=0 -logdir=/home/nfnaa/.steam/debian-installation/logs -uimode=7 -startcount=0 -steamuniverse=Public -realm=Global -clientui=/home/nfnaa/.steam/debian-installation/clientui -steampath=/home/nfnaa/.steam/debian-installation/ubuntu12_32/steam -launcher=0 --valve-initial-threadpool-size=6 --valve-enable-site-isolation --enable-smooth-scrolling --password-store=basic --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --disable-quick-menu --disable-component-update --enable-features=PlatformHEVCDecoderSupport --disable-features=SpareRendererForSitePerProcess,DcheckIsFatal,BlockPromptsIfIgnoredOften,ValveFFmpegAllowLowDelayHEVC
+nfnaa     427492  0.4  0.9 5089260 224608 ?      Sl    2025  80:15 ./steamwebhelper -nocrashdialog -lang=en_US -cachedir=/home/nfnaa/.steam/debian-installation/config/htmlcache -steampid=427245 -buildid=1751405894 -steamid=0 -logdir=/home/nfnaa/.steam/debian-installation/logs -uimode=7 -startcount=0 -steamuniverse=Public -realm=Global -clientui=/home/nfnaa/.steam/debian-installation/clientui -steampath=/home/nfnaa/.steam/debian-installation/ubuntu12_32/steam -launcher=0 --valve-initial-threadpool-size=6 --valve-enable-site-isolation --enable-smooth-scrolling --password-store=basic --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --disable-quick-menu --disable-component-update --enable-features=PlatformHEVCDecoderSupport --disable-features=SpareRendererForSitePerProcess,DcheckIsFatal,BlockPromptsIfIgnoredOften,ValveFFmpegAllowLowDelayHEVC
+nfnaa     427504  0.0  0.1 420812 45356 ?        Sl    2025   0:00 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --monitor-self-annotation=ptype=crashpad-handler --type=crashpad-handler --max-uploads=5 --max-db-size=20 --max-db-age=5 --database=/tmp/dumps --url=https://crash.steampowered.com/submit --annotation=lsb-release=Steam Runtime 3c (steamrt3c) --annotation=platform=linux64 --annotation=product=cefwebhelper --annotation=version=1751405894 --initial-client-fd=7 --shared-client-connection
+nfnaa     427509  0.0  0.2 34113868 53532 ?      S     2025   0:00 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --no-zygote-sandbox --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+nfnaa     427510  0.0  0.2 34113952 56004 ?      S     2025   0:00 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+nfnaa     427512  0.0  0.0 34113980 7408 ?       S     2025   0:00 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+nfnaa     427529  4.4  0.7 36470280 176148 ?     Sl    2025 873:17 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --no-zygote-sandbox --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+nfnaa     427555  0.0  0.3 962632 90384 ?        Sl    2025   1:25 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=id --service-sandbox-type=none --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6 --shared-files --field-trial-handle=3,i,16220694698283189547,10185927395718923640,262144 --enable-features=PlatformHEVCDecoderSupport --disable-features=BackForwardCache,BlockPromptsIfIgnoredOften,DcheckIsFatal,DocumentPictureInPictureAPI,SpareRendererForSitePerProcess,ValveFFmpegAllowLowDelayHEVC --variations-seed-version --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt
+nfnaa     427563  0.0  0.1 34483916 31608 ?      Sl    2025   0:00 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+nfnaa     427572  0.4  1.4 49820352 350092 ?     Sl    2025  78:33 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+root      434903  0.0  0.0      0     0 ?        S     2025   0:00 [jbd2/nvme0n1p7-8]
+root      434904  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-ext4-rsv-conversion]
+root      434960  0.0  0.0      0     0 ?        S     2025   0:00 [jbd2/nvme0n1p8-8]
+root      434961  0.0  0.0      0     0 ?        I<    2025   0:00 [kworker/R-ext4-rsv-conversion]
+root      435414  0.0  0.0   6844  2528 ?        Ss    2025   0:00 /sbin/mount.ntfs-3g /dev/nvme0n1p4 /media/nfnaa/data -o rw
+nfnaa     516821  0.0  0.0 155108  2980 ?        SLsl  2025   0:05 /usr/bin/gpg-agent --supervised
+nfnaa     623963  4.8  0.9 51713564 228468 ?     Sl    2025 760:02 /home/nfnaa/.steam/debian-installation/ubuntu12_64/steamwebhelper --type=zygote --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6
+nfnaa     624279  0.0  0.2 735400 62000 ?        Sl    2025   0:01 /proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=id --service-sandbox-type=none --user-agent-product=Valve Steam Client --lang=en_US.UTF-8 --user-data-dir=/home/nfnaa/.steam/debian-installation/config/htmlcache --crashpad-handler-pid=427504 --buildid=1751405894 --steamid=0 --valve-initial-threadpool-size=6 --shared-files --field-trial-handle=3,i,16220694698283189547,10185927395718923640,262144 --enable-features=PlatformHEVCDecoderSupport --disable-features=BackForwardCache,BlockPromptsIfIgnoredOften,DcheckIsFatal,DocumentPictureInPictureAPI,SpareRendererForSitePerProcess,ValveFFmpegAllowLowDelayHEVC --variations-seed-version --log-file=/home/nfnaa/.steam/debian-installation/logs/cef_log.txt
+root      817230  0.0  0.0  35344 10080 ?        Ss    2025   0:00 /usr/sbin/cupsd -l
+cups-br+  817248  0.0  0.0 268888 16740 ?        Ssl   2025   0:03 /usr/sbin/cups-browsed
+root      923602  0.0  0.0      0     0 ?        I<    2025   0:01 [kworker/1:2H-i915_cleanup]
+nfnaa     955716  6.0  4.6 15417284 1126256 ?    Sl    2025 366:45 /snap/firefox/7559/usr/lib/firefox/firefox
+nfnaa     955935  0.0  0.0 1066672 2472 ?        Sl    2025   0:00 /snap/firefox/7559/usr/lib/firefox/crashhelper 955716 13 /tmp/ 15
+nfnaa     956057  0.0  0.1 1350124 31028 ?       S     2025   0:02 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -ipcHandle 0 -signalPipe 1 -initialChannelId {582efea6-4210-41f1-b166-36086f0d6b55} -parentPid 955716 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 1 forkserver
+nfnaa     956062  0.0  0.1 1365852 41912 ?       Sl    2025   0:09 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -parentBuildID 20251217233610 -prefsHandle 0:41812 -prefMapHandle 1:280365 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {2a757a50-0263-4aa8-9e33-7b903917bfd4} -parentPid 955716 -crashReporter 5 -crashHelper 6 -appDir /snap/firefox/7559/usr/lib/firefox/browser 2 socket
+nfnaa     956082  0.0  0.7 3632780 170856 ?      Sl    2025   3:56 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:41908 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {52dbfb18-e088-44c1-9fd5-e0b5997bd05a} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 3 tab
+nfnaa     956093  0.0  0.4 1909920 118252 ?      Sl    2025   1:21 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -parentBuildID 20251217233610 -prefsHandle 0:41908 -prefMapHandle 1:280365 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {cc58c4e5-0376-4731-975d-5a35997fdb71} -parentPid 955716 -crashReporter 5 -crashHelper 6 -appDir /snap/firefox/7559/usr/lib/firefox/browser 4 rdd
+nfnaa     956320  0.3  1.8 3987044 442356 ?      Sl    2025  24:14 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:51655 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {2f6e78b4-a19e-42bb-8904-eac24a2168b8} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 5 tab
+nfnaa     956742  0.0  0.2 1505520 52400 ?       Sl    2025   0:47 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -parentBuildID 20251217233610 -sandboxingKind 0 -prefsHandle 0:53072 -prefMapHandle 1:280365 -sandboxReporter 2 -chrootClient 3 -ipcHandle 4 -initialChannelId {c33976e3-1e6b-46a8-8edd-c20fcda69052} -parentPid 955716 -crashReporter 5 -crashHelper 6 -appDir /snap/firefox/7559/usr/lib/firefox/browser 6 utility
+nfnaa    1034485 11.0  6.3 22509084 1538348 ?    Sl    2025 583:30 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46262 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {6eb1041b-1789-48aa-a7bd-0e3b384664b4} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 160 tab
+nfnaa    1105670  0.0  0.0  29324 19444 ?        S     2025   0:00 /usr/bin/python3 /usr/bin/gnome-terminal --wait
+nfnaa    1105673  0.0  0.1 459592 31964 ?        Sl    2025   0:00 /usr/bin/gnome-terminal.real --wait
+nfnaa    1105679  0.0  0.2 714336 71320 ?        Ssl   2025   0:42 /usr/libexec/gnome-terminal-server
+nfnaa    1105686  0.0  0.0   8660  5648 pts/0    Ss+   2025   0:00 bash
+nfnaa    1115429  0.0  0.0   8880  5852 pts/1    Ss+   2025   0:00 bash
+nfnaa    1126920  0.0  0.0   8660  5652 pts/2    Ss    2025   0:00 bash
+nfnaa    1128976  0.2  0.8 3822644 208392 ?      Sl    2025   8:26 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46437 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {f9dfd0bc-9899-40fa-81f3-4d583643aa8a} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 324 tab
+nfnaa    1130555  0.2  0.9 1461715052 242800 ?   SLsl  2025   6:28 /usr/share/code/code .
+nfnaa    1130560  0.0  0.2 34065932 50056 ?      S     2025   0:00 /usr/share/code/code --type=zygote --no-zygote-sandbox
+nfnaa    1130561  0.0  0.2 34065924 49552 ?      S     2025   0:00 /usr/share/code/code --type=zygote
+nfnaa    1130563  0.0  0.0 34065948 12784 ?      S     2025   0:00 /usr/share/code/code --type=zygote
+nfnaa    1130578  0.0  0.0 33576156 3620 ?       Sl    2025   0:00 /usr/share/code/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/nfnaa/.config/Code/Crashpad --url=appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=d5262f2a-932f-4669-83b3-24633463de31&iid=d5262f2a-932f-4669-83b3-24633463de31&sid=d5262f2a-932f-4669-83b3-24633463de31 --annotation=_companyName=Microsoft --annotation=_productName=VSCode --annotation=_version=1.106.3 --annotation=lsb-release=Ubuntu 24.04.3 LTS --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=37.7.0 --initial-client-fd=46 --shared-client-connection
+nfnaa    1130596  0.6  0.7 34529980 182868 ?     Sl    2025  19:31 /usr/share/code/code --type=zygote --no-zygote-sandbox
+nfnaa    1130605  0.0  0.3 33911864 82184 ?      Sl    2025   0:51 /proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1130578 --enable-crash-reporter=841b3a79-5026-48a2-a5ef-1f01defc3b26,no_channel --user-data-dir=/home/nfnaa/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8994375033331213637,8848387124771937460,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+nfnaa    1130644  2.6  2.5 1478453880 622584 ?   Sl    2025  79:40 /usr/share/code/code --type=zygote
+nfnaa    1130663  0.0  0.5 1461322608 127740 ?   Sl    2025   0:39 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1130578 --enable-crash-reporter=841b3a79-5026-48a2-a5ef-1f01defc3b26,no_channel --user-data-dir=/home/nfnaa/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8994375033331213637,8848387124771937460,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+nfnaa    1138319  0.0  1.3 51232180 324900 ?     SLl   2025   1:51 /opt/google/chrome/chrome
+nfnaa    1138325  0.0  0.0   5824  1880 ?        S     2025   0:00 cat
+nfnaa    1138326  0.0  0.0   5824  1884 ?        S     2025   0:00 cat
+nfnaa    1138329  0.0  0.0 50354732 4016 ?       Sl    2025   0:00 /opt/google/chrome/chrome_crashpad_handler --monitor-self --monitor-self-annotation=ptype=crashpad-handler --database=/home/nfnaa/.config/google-chrome/Crash Reports --metrics-dir=/home/nfnaa/.config/google-chrome --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 24.04.3 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=143.0.7499.40 --initial-client-fd=5 --shared-client-connection
+nfnaa    1138331  0.0  0.0 33568280 3360 ?       Sl    2025   0:00 /opt/google/chrome/chrome_crashpad_handler --no-periodic-tasks --monitor-self-annotation=ptype=crashpad-handler --database=/home/nfnaa/.config/google-chrome/Crash Reports --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=lsb-release=Ubuntu 24.04.3 LTS --annotation=plat=Linux --annotation=prod=Chrome_Linux --annotation=ver=143.0.7499.40 --initial-client-fd=4 --shared-client-connection
+nfnaa    1138337  0.0  0.2 50987436 65200 ?      S     2025   0:00 /opt/google/chrome/chrome --type=zygote --no-zygote-sandbox --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable
+nfnaa    1138338  0.0  0.2 34210212 65564 ?      S     2025   0:00 /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable
+nfnaa    1138340  0.0  0.0 34210236 18364 ?      S     2025   0:00 /opt/google/chrome/chrome --type=zygote --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable
+nfnaa    1138371  0.0  0.8 51419152 214436 ?     Sl    2025   2:23 /opt/google/chrome/chrome --type=gpu-process --ozone-platform=wayland --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --metrics-shmem-handle=4,i,17788353719484318040,6784682697163351835,262144 --field-trial-handle=3,i,7366628028244465061,11377163905245347477,262144 --disable-features=EyeDropper --variations-seed-version=20251219-070015.367000 --trace-process-track-uuid=3190708988185955192
+nfnaa    1138373  0.0  0.5 34018936 135232 ?     Sl    2025   0:32 /opt/google/chrome/chrome --type=utility --utility-sub-type=network.mojom.NetworkService --lang=id --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,2058649859795746694,10619096681594549479,524288 --field-trial-handle=3,i,7366628028244465061,11377163905245347477,262144 --disable-features=EyeDropper --variations-seed-version=20251219-070015.367000 --trace-process-track-uuid=3190708989122997041
+nfnaa    1138397  0.0  0.2 34276852 58460 ?      Sl    2025   0:03 /opt/google/chrome/chrome --type=utility --utility-sub-type=storage.mojom.StorageService --lang=id --service-sandbox-type=utility --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,17721079230152751289,4798697221751534232,524288 --field-trial-handle=3,i,7366628028244465061,11377163905245347477,262144 --disable-features=EyeDropper --variations-seed-version=20251219-070015.367000 --trace-process-track-uuid=3190708990060038890
+nfnaa    1138586  0.0  0.7 1443292480 185308 ?   Sl    2025   1:11 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=id --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=9 --time-ticks-at-unix-epoch=-1766705537557134 --launch-time-ticks=373128032291 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,464855973383678570,13317463523093549275,2097152 --field-trial-handle=3,i,7366628028244465061,11377163905245347477,262144 --disable-features=EyeDropper --variations-seed-version=20251219-070015.367000 --trace-process-track-uuid=3190708994745248135
+nfnaa    1153918  0.0  0.4 1461331540 112704 ?   Sl    2025   2:16 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1130578 --enable-crash-reporter=841b3a79-5026-48a2-a5ef-1f01defc3b26,no_channel --user-data-dir=/home/nfnaa/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8994375033331213637,8848387124771937460,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+nfnaa    1174921  0.0  0.0 533708 11792 ?        Ssl   2025   1:28 ibus-daemon -drx
+nfnaa    1174936  0.0  0.0 307884  7432 ?        Sl    2025   0:00 /usr/libexec/ibus-dconf
+nfnaa    1174937  0.0  0.1 418032 28056 ?        Sl    2025   0:00 /usr/libexec/ibus-ui-gtk3
+nfnaa    1174940  0.0  0.1 422324 33076 ?        Sl    2025   0:26 /usr/libexec/ibus-extension-gtk3
+nfnaa    1174943  0.0  0.1 339472 27232 ?        Sl    2025   0:00 /usr/libexec/ibus-x11 --kill-daemon
+nfnaa    1174948  0.0  0.0 307820  7048 ?        Sl    2025   0:00 /usr/libexec/ibus-portal
+nfnaa    1174967  0.0  0.0 234292  7788 ?        Sl    2025   0:23 /usr/libexec/ibus-engine-simple
+root     1184986  0.0  0.0      0     0 ?        I     2025   0:02 [kworker/6:2-mm_percpu_wq]
+root     1203754  0.0  0.0      0     0 ?        S     2025   0:00 [psimon]
+nfnaa    1203860  2.9  1.3 4030780 337796 ?      SLl   2025  40:30 /usr/bin/totem --gapplication-service
+nfnaa    1230010  0.2  1.7 4067708 432532 ?      Sl    2025   2:32 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46554 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {f83cfe10-f236-4e48-b4ee-0b3ccfd45301} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 419 tab
+nfnaa    1230368  0.5  1.3 3900776 338344 ?      Sl    2025   6:19 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46554 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {746786e2-66f9-47fe-b72d-b65e8cedbfe5} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 420 tab
+nfnaa    1235505  0.2  2.4 1464734868 590852 ?   Sl    2025   2:34 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --dns-result-order=ipv4first --experimental-network-inspection --inspect-port=0 --crashpad-handler-pid=1130578 --enable-crash-reporter=841b3a79-5026-48a2-a5ef-1f01defc3b26,no_channel --user-data-dir=/home/nfnaa/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8994375033331213637,8848387124771937460,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+nfnaa    1235518  0.0  0.5 1461331356 123952 ?   Sl    2025   0:16 /proc/self/exe --type=utility --utility-sub-type=node.mojom.NodeService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1130578 --enable-crash-reporter=841b3a79-5026-48a2-a5ef-1f01defc3b26,no_channel --user-data-dir=/home/nfnaa/.config/Code --standard-schemes=vscode-webview,vscode-file --enable-sandbox --secure-schemes=vscode-webview,vscode-file --cors-schemes=vscode-webview,vscode-file --fetch-schemes=vscode-webview,vscode-file --service-worker-schemes=vscode-webview --code-cache-schemes=vscode-webview,vscode-file --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,8994375033331213637,8848387124771937460,262144 --enable-features=DocumentPolicyIncludeJSCallStacksInCrashReports,EarlyEstablishGpuChannel,EstablishGpuChannelAsync --disable-features=CalculateNativeWinOcclusion,FontationsLinuxSystemFonts,ScreenAIOCREnabled,SpareRendererForSitePerProcess --variations-seed-version
+nfnaa    1235558  0.0  0.6 1459513912 169564 ?   Sl    2025   0:10 /usr/share/code/code --max-old-space-size=3072 /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js --serverMode partialSemantic --useInferredProjectPerProjectRoot --disableAutomaticTypingAcquisition --cancellationPipeName /tmp/vscode-typescript1000/84a73d1db61416c68ad8/tscancellation-47aec1d42294a31ec56d.tmp* --globalPlugins @vscode/copilot-typescript-server-plugin,typescript-svelte-plugin,vue-reactivity-analysis-plugin-pack,vue-typescript-plugin-pack --pluginProbeLocations /home/nfnaa/.vscode/extensions/github.copilot-chat-0.33.5,/home/nfnaa/.vscode/extensions/svelte.svelte-vscode-109.12.1,/home/nfnaa/.vscode/extensions/vue.volar-3.2.1,/home/nfnaa/.vscode/extensions/vue.volar-3.2.1 --locale en --noGetErrOnBackgroundUpdate --canUseWatchEvents --validateDefaultNpmLocation --useNodeIpc
+nfnaa    1235559  0.1  1.0 1459513912 264700 ?   Sl    2025   1:33 /usr/share/code/code --max-old-space-size=3072 /usr/share/code/resources/app/extensions/node_modules/typescript/lib/tsserver.js --useInferredProjectPerProjectRoot --enableTelemetry --cancellationPipeName /tmp/vscode-typescript1000/84a73d1db61416c68ad8/tscancellation-72462a27b03aec93f722.tmp* --globalPlugins @vscode/copilot-typescript-server-plugin,typescript-svelte-plugin,vue-reactivity-analysis-plugin-pack,vue-typescript-plugin-pack --pluginProbeLocations /home/nfnaa/.vscode/extensions/github.copilot-chat-0.33.5,/home/nfnaa/.vscode/extensions/svelte.svelte-vscode-109.12.1,/home/nfnaa/.vscode/extensions/vue.volar-3.2.1,/home/nfnaa/.vscode/extensions/vue.volar-3.2.1 --locale en --noGetErrOnBackgroundUpdate --canUseWatchEvents --validateDefaultNpmLocation --useNodeIpc
+nfnaa    1235574  0.0  0.4 1459513976 101176 ?   Sl    2025   0:00 /usr/share/code/code /usr/share/code/resources/app/extensions/node_modules/typescript/lib/typingsInstaller.js --globalTypingsCacheLocation /home/nfnaa/.cache/typescript/5.9 --enableTelemetry --typesMapLocation /usr/share/code/resources/app/extensions/node_modules/typescript/lib/typesMap.json --validateDefaultNpmLocation
+nfnaa    1235714  0.0  0.3 1459513912 83852 ?    Sl    2025   0:01 /usr/share/code/code /usr/share/code/resources/app/extensions/json-language-features/server/dist/node/jsonServerMain --node-ipc --clientProcessId=1235505
+nfnaa    1235736  0.0  0.6 1476656140 146820 ?   Sl    2025   0:22 /usr/share/code/code --type=zygote
+nfnaa    1235747  0.0  0.7 1459513916 191612 ?   Sl    2025   1:00 /usr/share/code/code /home/nfnaa/.vscode/extensions/dbaeumer.vscode-eslint-3.0.20/server/out/eslintServer.js --node-ipc --clientProcessId=1235505
+nfnaa    1236004  0.0  0.3 1476621288 91476 ?    Sl    2025   0:00 /usr/share/code/code --type=zygote
+nfnaa    1236012  0.0  0.4 1476632232 100892 ?   Sl    2025   0:00 /usr/share/code/code --type=zygote
+nfnaa    1241864  0.0  0.0   5676  4548 ?        S     2025   0:01 /home/nfnaa/.vscode/extensions/ms-python.python-2025.20.1-linux-x64/python-env-tools/bin/pet server
+nfnaa    1242036  0.0  0.0   8912  5832 pts/3    Ss+   2025   0:00 /usr/bin/bash --init-file /usr/share/code/resources/app/out/vs/workbench/contrib/terminal/common/scripts/shellIntegration-bash.sh
+nfnaa    1242103  0.0  1.2 1462963420 314044 ?   Sl    2025   0:06 /usr/share/code/code /home/nfnaa/.vscode/extensions/ms-python.vscode-pylance-2025.10.4/dist/server.bundle.js --cancellationReceive=file:832e7057321e995bc99823e468b4671498b1b8736d --node-ipc --clientProcessId=1235505
+nfnaa    1248087  0.1  1.2 3931460 301524 ?      Sl    2025   1:48 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46555 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {063d789a-c4b3-4bf4-b147-7ad693a41843} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 470 tab
+nfnaa    1251735  0.0  0.3 1459546696 89612 ?    Sl    2025   0:01 /usr/share/code/code /usr/share/code/resources/app/extensions/css-language-features/server/dist/node/cssServerMain --node-ipc --clientProcessId=1235505
+root     1253492  0.0  0.0      0     0 ?        I     2025   0:00 [kworker/5:0-mm_percpu_wq]
+nfnaa    1254004  0.0  0.3 3513836 96752 ?       Sl    2025   0:14 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46554 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {3f0cbbf9-1e29-4f10-b8c1-66cb1ec7ba63} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 508 tab
+nfnaa    1254109  0.0  0.4 3530212 104976 ?      Sl    2025   0:13 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46554 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {dc42cf9b-5dd6-4d53-909e-85d2bfc97bac} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 509 tab
+nfnaa    1257127  0.6  1.5 4065452 385404 ?      Sl    2025   6:07 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46555 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {22ff2d9e-3667-420d-97e3-0a262d970c05} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 521 tab
+root     1265899  0.0  0.0      0     0 ?        I     2025   0:00 [kworker/8:0-events]
+nfnaa    1271436  0.1  1.0 3776384 264860 ?      Sl   01:04   0:59 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46556 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {b20a97d8-e5f5-42c4-88b6-429ce05fe9cc} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 583 tab
+nfnaa    1274979  3.5  3.4 13689904 839584 ?     Sl   01:18  21:28 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46554 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {0998fa4f-aeed-422c-b560-e46e47898190} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 615 tab
+nfnaa    1277943  0.0  0.3 34012776 83376 ?      Sl   01:32   0:00 /opt/google/chrome/chrome --type=utility --utility-sub-type=audio.mojom.AudioService --lang=id --service-sandbox-type=none --render-node-override=/dev/dri/renderD128 --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --change-stack-guard-on-fork=enable --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,12810058657996573483,4509833856367494772,524288 --field-trial-handle=3,i,7366628028244465061,11377163905245347477,262144 --disable-features=EyeDropper --variations-seed-version=20251219-070015.367000 --trace-process-track-uuid=3190709044408466132
+nfnaa    1277971  0.0  0.2 1443183644 72664 ?    Sl   01:32   0:00 /opt/google/chrome/chrome --type=renderer --crashpad-handler-pid=1138329 --enable-crash-reporter=7bff777b-1cb3-4286-bacb-1a7592073d0f, --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors --change-stack-guard-on-fork=enable --ozone-platform=wayland --lang=id --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=66 --time-ticks-at-unix-epoch=-1766705537557134 --launch-time-ticks=416927126255 --shared-files=v8_context_snapshot_data:100 --metrics-shmem-handle=4,i,8418614021657146875,5646685557167210986,2097152 --field-trial-handle=3,i,7366628028244465061,11377163905245347477,262144 --disable-features=EyeDropper --variations-seed-version=20251219-070015.367000 --trace-process-track-uuid=3190709048156633528
+root     1278829  0.0  0.0      0     0 ?        I    01:36   0:00 [kworker/4:0-mm_percpu_wq]
+root     1280717  0.0  0.0      0     0 ?        I    01:46   0:07 [kworker/u48:16-kvfree_rcu_reclaim]
+root     1280749  0.1  0.0      0     0 ?        I    09:56   0:06 [kworker/u48:46-events_power_efficient]
+root     1280758  0.0  0.0      0     0 ?        S    09:56   0:00 [irq/139-mei_me]
+root     1280760  0.0  0.0      0     0 ?        I    09:56   0:00 [kworker/11:2-mm_percpu_wq]
+nfnaa    1282780  0.5  0.8 3650320 214252 ?      Sl   10:05   0:22 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46555 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {d1a1d06c-2519-43cc-afce-2e20f510861a} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 642 tab
+nfnaa    1284334 15.0  2.9 4454924 728784 ?      Sl   10:11   9:59 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46555 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {807406a1-3eca-4f0b-a667-615cc4538043} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 649 tab
+root     1286771  0.0  0.0      0     0 ?        I    10:23   0:00 [kworker/7:1-events]
+nfnaa    1286906  0.1  0.5 3554156 127224 ?      Sl   10:23   0:05 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46554 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {03413600-a65d-4808-89c6-c73c01c980cc} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 660 tab
+root     1288457  0.0  0.0      0     0 ?        I    10:30   0:00 [kworker/11:0-events]
+root     1288513  0.0  0.0      0     0 ?        I    10:31   0:00 [kworker/10:0-cgroup_destroy]
+root     1289349  0.0  0.0      0     0 ?        I    10:35   0:00 [kworker/1:0-events]
+root     1289867  0.0  0.0      0     0 ?        I    10:38   0:00 [kworker/2:1-events]
+root     1290224  0.0  0.0      0     0 ?        I    10:40   0:00 [kworker/8:2-events]
+root     1290246  0.0  0.0      0     0 ?        I    10:40   0:00 [kworker/3:1-events]
+root     1290453  0.1  0.0      0     0 ?        I<   10:42   0:03 [kworker/u49:1-rb_allocator]
+root     1291714  0.0  0.0      0     0 ?        I    10:47   0:00 [kworker/3:2-events]
+root     1292005  0.0  0.0      0     0 ?        I    10:48   0:00 [kworker/0:0-mm_percpu_wq]
+root     1292204  0.0  0.0      0     0 ?        I    10:49   0:01 [kworker/u48:2-kvfree_rcu_reclaim]
+root     1293089  0.0  0.0      0     0 ?        I    10:52   0:00 [kworker/6:0]
+root     1294119  0.0  0.0      0     0 ?        I    10:56   0:00 [kworker/10:2-mm_percpu_wq]
+root     1294274  0.0  0.0      0     0 ?        I    10:57   0:00 [kworker/1:1-mm_percpu_wq]
+root     1294379  0.0  0.0      0     0 ?        I    10:58   0:00 [kworker/7:0-mm_percpu_wq]
+root     1294800  0.1  0.0      0     0 ?        I    11:00   0:01 [kworker/9:2-events]
+root     1294923  0.0  0.0      0     0 ?        I    11:00   0:00 [kworker/5:1]
+root     1295038  0.0  0.0      0     0 ?        I    11:01   0:00 [kworker/2:0-events]
+root     1295110  0.0  0.0      0     0 ?        I<   11:01   0:00 [kworker/u49:0-rb_allocator]
+root     1295947  0.0  0.0      0     0 ?        I    11:05   0:00 [kworker/0:2-events]
+root     1296414  0.0  0.0      0     0 ?        I    11:08   0:00 [kworker/u48:1-kvfree_rcu_reclaim]
+root     1296719  0.0  0.0      0     0 ?        I    11:10   0:00 [kworker/4:1]
+root     1297131  0.0  0.0      0     0 ?        I    11:12   0:00 [kworker/9:1-events]
+nfnaa    1297259 25.6  3.7 4522524 919364 ?      Rl   11:12   1:15 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46605 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {09997376-cee9-4c6f-8a4e-1640021290c8} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 702 tab
+nfnaa    1297401  0.1  0.3 3504848 82540 ?       Sl   11:13   0:00 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46605 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {8d766874-6dda-4e3f-81c4-81ca82be32da} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 703 tab
+root     1297505  0.1  0.0      0     0 ?        I    11:13   0:00 [kworker/u48:0-writeback]
+root     1297512  0.0  0.0      0     0 ?        I    11:14   0:00 [kworker/1:2-events]
+nfnaa    1297725  0.1  0.2 3495800 70064 ?       Sl   11:15   0:00 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46605 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {bf234212-664c-4bb8-b535-8f47764dd9a3} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 704 tab
+root     1297771  0.2  0.0      0     0 ?        I<   11:15   0:00 [kworker/u49:2-i915_flip]
+root     1297791  0.0  0.0      0     0 ?        I    11:15   0:00 [kworker/7:2]
+nfnaa    1297988  0.9  0.3 3157864 74348 ?       Sl   11:16   0:00 gjs /usr/share/gnome-shell/extensions/ding@rastersoft.com/app/ding.js -E -P /usr/share/gnome-shell/extensions/ding@rastersoft.com/app
+root     1298138  0.0  0.0      0     0 ?        I    11:16   0:00 [kworker/2:2-mm_percpu_wq]
+root     1298139  0.0  0.0      0     0 ?        I    11:16   0:00 [kworker/0:1]
+root     1298140  0.0  0.0      0     0 ?        I    11:16   0:00 [kworker/u48:3-i915]
+nfnaa    1298172  0.2  0.2 3495800 70728 ?       Sl   11:16   0:00 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46605 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {1b612c9d-ca20-4c70-bb67-082f85c41057} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 705 tab
+root     1298213  0.0  0.0      0     0 ?        I    11:16   0:00 [kworker/10:1]
+root     1298355  0.0  0.0      0     0 ?        I    11:17   0:00 [kworker/9:0-mm_percpu_wq]
+nfnaa    1298432  2.3  0.2 3495800 69616 ?       Sl   11:17   0:00 /snap/firefox/7559/usr/lib/firefox/firefox -contentproc -isForBrowser -prefsHandle 0:46605 -prefMapHandle 1:280365 -jsInitHandle 2:223356 -parentBuildID 20251217233610 -sandboxReporter 3 -chrootClient 4 -ipcHandle 5 -initialChannelId {0a3a53c8-98a8-4e26-8f83-9b966c0266c7} -parentPid 955716 -crashReporter 6 -crashHelper 7 -greomni /snap/firefox/7559/usr/lib/firefox/omni.ja -appomni /snap/firefox/7559/usr/lib/firefox/browser/omni.ja -appDir /snap/firefox/7559/usr/lib/firefox/browser 706 tab
+nfnaa    1298489  0.0  0.0  11544  5236 pts/2    R+   11:17   0:00 ps aux
