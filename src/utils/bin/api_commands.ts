@@ -36,7 +36,7 @@ export const weather = async (args: string[]): Promise<string> => {
   return weather;
 };
 
-export const wrapQuote = (text: string, maxWords: number = 8): string => {
+const wrapQuote = (text: string, maxWords: number = 8): string => {
   const words = text.split(' ');
   let result = '';
   for (let i = 0; i < words.length; i++) {

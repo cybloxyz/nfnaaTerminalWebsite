@@ -7,9 +7,17 @@ import config from '../../../config.json';
 //files
 const foldersystem = {
   home: {
-    'README.md': `hello welcome to my terminal website! take a look around and have fun!`,
+    'README.md': `hello welcome to my terminal website! take a look around and have fun! 
+                  wanna open the secretfolder? go search the clue`,
     someofme: {
       secretfolder: {
+        myfavpic: {
+          'smileeww.png': `/pic/smileeww.png`,
+          'sylchibi.png': `/pic/sylchibi.png`,
+          'sylus.png': `/pic/sylus.png`,
+          'syluss.png': `/pic/syluss.png`,
+          'whh.png': `/pic/whh.png`,
+        },
         'topsecret.txt': `lemme tell you something..but only if you the top 3! but HEY WAIT A MINUTE NOT NOW I STILL WORK ON THE CODE!`,
       },
       'me.txt': `'This is some info about me'`,
@@ -18,18 +26,14 @@ const foldersystem = {
         'serious-cryptography.pdf': '/doc/seriouscryptography.pdf',
         'art-of-exploitation.pdf': '/doc/artofexploitation.pdf',
         'organic-chemistry.pdf': '/doc/organic-chemistry.pdf',
+        'clue.txt': `JVKE best song, different song, but the same words`,
       },
     },
-    myWorks: {
-      'project1.txt': `"Details about project 1."`,
-      'project2.txt': `"Details about project 2."`,
-    },
     pictures: {
-      'picture1.png': `"This is picture 1."`,
-      'picture2.png': `"This is picture 2."`,
-    },
-    music: {
-      'song.mp3': `"This is a song file."`,
+      'nothing.txt': `hmmmmmmmm HE IS...IF YOU KNOW YOU KNOW`,
+      'sailor-ducky.stl': `https://www.printables.com/model/1525661-sailor-ducky`,
+      'cutie.png': `/pic/cutie.png`,
+      'mephistoo.png': `/pic/mephistoo.png`,
     },
   },
 };
@@ -112,7 +116,7 @@ export const cd = async (args: string[]): Promise<string> => {
 //unlock
 export const unlock = async (args: string[]): Promise<string> => {
   const desc = 'to unlock the secretfolder!. Usage: unlock [password]';
-  const secretcode = 'deymufoundme';
+  const secretcode = 'tillifoundher';
   if (args.length === 0) {
     return `Usage: unlock [secret_code]`;
   }
@@ -218,7 +222,7 @@ lost somewhere? didn't now where you are? use this.
   
 Usage: pwd`,
   quote: `
-having bad day?...sucks, i'll give you quote then. 
+having bad day?...sucks, i'll give you a motivation then. 
   
 Usage: quote`,
   reddit: `
@@ -257,6 +261,14 @@ Usage: weather`,
 doubt about yourself? ask then. 
   
 Usage: whoami`,
+  view: `
+wanna see picture? use this.
+
+Usage: view [filename.png]`,
+  goto: `
+for seeing non-pdf, non-txt or non-picture format btw.
+
+Usage: goto [filename]`,
 };
 
 //man
@@ -273,6 +285,59 @@ export const man = async (args: string[]): Promise<string> => {
   } else {
     return `man: there is no man for ${command}`;
   }
+};
+
+//view
+export const view = async (args: string[]): Promise<string> => {
+  if (args.length === 0) {
+    return 'Usage: view [filename.png]';
+  }
+
+  const filename = args[0];
+
+  let currentDir: any = foldersystem;
+  currentPath.forEach((p) => {
+    currentDir = currentDir[p];
+  });
+
+  const file = currentDir[filename];
+
+  if (file) {
+    if (
+      typeof file === 'string' &&
+      (file.match(/\.(png|jpe?g|webp)$/i) || file.startsWith('http'))
+    ) {
+      window.open(file, '_blank');
+      return `opening ${filename}...`;
+    }
+    return `can't open ${filename}, is it png or jpg?`;
+  }
+  return `view: ${filename} no such png or jpg file`;
+};
+
+//goto
+export const goto = async (args: string[]): Promise<string> => {
+  if (args.length === 0) {
+    return 'Usage: goto [filename.stl]';
+  }
+
+  const filename = args[0];
+
+  let currentDir: any = foldersystem;
+  currentPath.forEach((p) => {
+    currentDir = currentDir[p];
+  });
+
+  const file = currentDir[filename];
+
+  if (file) {
+    if (typeof file === 'string' && file.startsWith('http')) {
+      window.open(file, '_blank');
+      return `opening ${filename}...`;
+    }
+    return `can't open ${filename}, maybe invalid`;
+  }
+  return `goto: ${filename} no such works`;
 };
 
 //pdf
@@ -385,6 +450,8 @@ export const sudo = async (args?: string[]): Promise<string> => {
 export const banner = (args?: string[]): string => {
   return `
 
+                         ִֶָ. ..🍷𓂃 ࣪ ִֶָ🐦‍⬛་༘࿐
+
 ░███     ░███   ░███████████   ░███     ░███     ░████████       ░████████ 
 ░██████  ░███   ░███           ░██████  ░███    ░███   ░███     ░███   ░███
 ░███ ░███░███   ░███           ░███ ░███░███   ░███     ░███   ░███     ░███
@@ -394,6 +461,7 @@ export const banner = (args?: string[]): string => {
 ░███     ░███   ░███           ░███     ░███   ░███     ░███   ░███     ░███ 
 
 ciao! welcome to nfnaa terminal website
+
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
 `;

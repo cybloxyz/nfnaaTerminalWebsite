@@ -215,6 +215,82 @@ export const quotes: Quote[] = [
     text: 'Hardships often prepare ordinary people for an extraordinary destiny.',
     author: 'C.S. Lewis',
   },
+  {
+    text: 'no matter how hard is life, just do not stop',
+    author: 'nfnaa',
+  },
+  {
+    text: 'RARE QUOTES! look for someone who loves you like the president loves palm trees',
+    author: 'indonesia',
+  },
+  {
+    text: 'giving up? remember to 5 years rule in business',
+    author: 'nfnaa',
+  },
+  {
+    text: 'having a bad day? eat ice cream!',
+    author: 'nfnaa',
+  },
+  {
+    text: 'having issues with peoples? go search GPT, wait until there is AIscrapping',
+    author: 'somwan',
+  },
+  {
+    text: `you know you're in love when you can't fall asleep because reality is finally better than your dreams`,
+    author: 'Dr.seuss',
+  },
+  {
+    text: 'it is better to be hated for what you are than to be loved for what you are not',
+    author: 'Andre Gide',
+  },
+  {
+    text: 'and sometimes you love a person just because they feel like home',
+    author: 'Bridget Jones Diary',
+  },
+  {
+    text: 'try not. do, or do not. there is no try',
+    author: 'star wars',
+  },
+  {
+    text: 'after all, tomorrow is another day!',
+    author: 'gone with the wind',
+  },
+  {
+    text: 'look! Adventure is out there!',
+    author: 'up',
+  },
+  {
+    text: 'if you believe in yourself, with a tiny pinch of magic, all your dreams can come true!',
+    author: 'Spongebob',
+  },
+  {
+    text: 'you never know the true value of a moment until it becomes a memory',
+    author: 'Spongebob',
+  },
+  {
+    text: 'no one can change a person, but someone can be a reason for that person to change',
+    author: 'Spongebob',
+  },
+  {
+    text: 'stupidity is not a virus, but it sure is spreading like one',
+    author: 'Sandy',
+  },
+  {
+    text: 'i am absorbing his blows like i am made of some sort of spongy material!',
+    author: 'Spongebob',
+  },
+  {
+    text: 'a 5 letter of happiness, MONEY',
+    author: 'Mr.Krabs',
+  },
+  {
+    text: 'giving up is for rookies',
+    author: 'Hercules',
+  },
+  {
+    text: 'someone you not meet yet is loving you',
+    author: 'somwan',
+  },
 ];
 
 export const getRandomQuote = (): Quote => {
